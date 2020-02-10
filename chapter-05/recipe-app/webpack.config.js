@@ -11,6 +11,11 @@ module.exports = {
       sourceMapFilename: 'bundle.map'
   },
   devtool: '#source-map',
+  devServer: {
+    inline: true,
+    port: 7777,
+    contentBase: __dirname + '/dist/'
+  },
   module: {
       rules: [
           {
