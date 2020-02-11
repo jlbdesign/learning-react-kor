@@ -1,8 +1,9 @@
 import '../stylesheets/APP.scss'
+import PhotoGroup from '../PhotoGroup'
 
 const App = () =>
     <div className="app">
-        테스트
+        <PhotoGroup/>
     </div>
 
 export default App
