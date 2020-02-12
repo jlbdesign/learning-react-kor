@@ -1,23 +1,13 @@
 import C from '../constants'
 
-export const photo = (state = {}, action={ type: null }) => {
+export const group = (state = [], action={ type: null }) => {
     switch (action.type) {
         case C.ADD_COLOR:
-            return {
-                id: action.id,
-                path: action.path,
-                title: action.title,
-                color: action.color,
-                timestamp: action.timestamp,
-                rating: 0
-            }
+            return state
         case C.RATE_COLOR:
             return (state.id !== action.id) ?
-                state :
-                {
-                    ...state,
-                    rating: action.rating
-                }
+                state : 
+                [...state]
         default :
             return state
     }
@@ -28,11 +18,11 @@ export const photos = (state = [], action={ type: null }) => {
         case C.ADD_COLOR :
             return [
                 ...state,
-                photo({}, action)
+                group([], action)
             ]
         case C.RATE_COLOR :
             return state.map(
-                c => photo(c, action)
+                c => group(c, action)
             )
         case C.REMOVE_COLOR :
             return state.filter(

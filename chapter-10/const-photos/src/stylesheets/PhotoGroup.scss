@@ -1,0 +1,14 @@
+@import "globals";
+
+div.photo-group{
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  span {
+    color: red;
+    text-shadow: 2px 2px 7px black;
+    font-size: 1em;
+    margin: .5em;
+  }
+}

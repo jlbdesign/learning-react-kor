@@ -1,11 +1,11 @@
 //import { Component } from 'react'
-import { Photos } from './containers'
+import { Groups } from './containers'
 import '../stylesheets/APP.scss'
 //import PhotoGroup from './ui/PhotoGroup'
 
 const App = () =>
     <div className="app">
-        <Photos/>
+        <Groups/>
     </div>
 
 export default App
