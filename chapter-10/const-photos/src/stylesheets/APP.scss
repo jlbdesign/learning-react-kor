@@ -4,7 +4,32 @@ div.app {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  nav.global {
+    padding: 10px 3px;
+    width: 100%;
+    display: flex;
+    
+    .logo {
+      width: 100px;
+      flex: none;
+    }
+
+    .search {
+      width: 100px;
+      flex: none;
+    }
+
+    button {
+      width: 100px;
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+  }
 }
+
+
 
 div.whoops-404 {
   position: absolute;

@@ -5,6 +5,13 @@ import '../stylesheets/APP.scss'
 
 const App = () =>
     <div className="app">
+        <nav class="global">
+            <div class="logo">로고</div>
+            <div class="search">
+                <input id="searchQuery" name="query"></input>
+            </div>
+            <button class="summitSearch">검색</button>
+        </nav>
         <Groups/>
     </div>
 
